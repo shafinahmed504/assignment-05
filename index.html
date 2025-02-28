@@ -7,14 +7,15 @@
 <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header class="flex justify-around mx-auto h-24 max-w-screen-2xl bg-[#F9F7F3]">
-        <div class="flex items-center"> <button class="common-buttons">Blog</button> </div>
-        <div class="flex items-center justify-between w-80">
+        <div class="flex items-center"><button id="btn-blog" class="common-buttons">Blog</button></div>
+         
+        <div class="flex items-center justify-center w-14 lg:w-80 lg:justify-between ">
             <img src="assets/logo.png" alt="">
-            <h1 class="similiar-header w-60 h-7">Donate Bangladesh</h1>
+            <h1 class="similiar-header w-60 h-7 sm:w-4 text-xs flex items-center ">Donate Bangladesh</h1>
         </div>
 
         <div class="flex justify-between items-center w-28">
@@ -24,6 +25,7 @@
     </header>
     <main></main>
     <footer></footer>
-    
+
+    <script src="Js/home-to-blog.js"></script>
 </body>
 </html>

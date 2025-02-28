@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="Styles/blog.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
@@ -10,11 +11,11 @@
 <body>
 <!-- Header begins -->
 <header class="flex justify-around mx-auto h-24 max-w-screen-2xl bg-[#F9F7F3]">
-    <div class="flex items-center"> <button class="common-buttons">Blog</button> </div>
-    <div class="flex items-center justify-between w-80">
-        <img src="assets/logo.png" alt="">
-        <h1 class="similiar-header w-60 h-7">Donate Bangladesh</h1>
-    </div>
+    <div class="flex items-center"> <button class="common-buttons" id="btn-home" >Home</button> </div>
+    <div class="flex items-center justify-center w-14 lg:w-80 lg:justify-between ">
+      <img src="assets/logo.png" alt="">
+      <h1 class="similiar-header w-60 h-7 sm:w-4 text-xs flex items-center ">Donate Bangladesh</h1>
+  </div>
 
     <div class="flex justify-between items-center w-28">
         <img src="assets/coin.png" alt=""> <p>5500 BDT</p>
@@ -23,29 +24,47 @@
 <!-- Header ends -->
 
 
-    <main><div class="join join-vertical w-full">
+    <main>
+        
+        <h1 class="text-7xl font-bold mb-20 ml-7">Important FAQ</h1>
+        
+        
+        <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>
+                To select id or Class by query selector: 1.document.querySelector(#id/.class)
+                2.document.getElementById('id name')
+                3.document.getElementByClass('id name')
+
+
+            </p>
+          </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the contect of DOM,and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>To perform any form of DOM manipulation, you have to access the document object first. Next we have the html root element which is a child of the document object. Next on the line are the body and head elements which are siblings to each other and children of the html element.</p>
           </div>
         </div>
       </div></main>
     
+      <script src="Js/blog-to-home.js"></script>
 </body>
 </html>
