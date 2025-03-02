@@ -10,3 +10,4 @@ function getTextValue(id){
     return textNumber;
 
 }
+
